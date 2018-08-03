@@ -1,12 +1,14 @@
+require('ts-node').register()
 module.exports.config = {
     // Always running with debugger enabled
-    //debug: true,
-    //execArgv: ['--inspect=127.0.0.1:5859'],
+    debug: true,
+    execArgv: ['--inspect=127.0.0.1:5859'],
     host: 'ip-5236.sunline.net.ua',
     port: 4444,
     path: '/wd/hub',
     specs: [
-        'tests/**/4.ts',
+        //'tests/**/4_1.ts',
+        'tests/5/example/5.ts'
     ],
     capabilities: [
         {
@@ -28,7 +30,7 @@ module.exports.config = {
     connectionRetryCount: 3,
     reporters: [
         'spec',
-        'mochawesome'
+        //     'mochawesome'
     ],
     reporterOptions: {
         outputDir: './', //json file will be written to this directory
@@ -37,9 +39,10 @@ module.exports.config = {
     framework: 'mocha',
     mochaOpts: {
         // https://mochajs.org/#usage
-        compilers: [
-            'ts-node/register'
-        ],
+        // compilers: [
+        //     'ts-node/register'
+        // ],
+        timeout: 60000
     },
     onPrepare: () => {
         const chai = require('chai');

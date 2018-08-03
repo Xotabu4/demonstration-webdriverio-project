@@ -1,9 +1,11 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es5",
+        "target": "es6",
+        //"outDir": "./built"
+        "sourceMap": true,
         "inlineSourceMap": true,
-        "outDir": "./built"
+        "inlineSources": true
     },
     "exclude": [
         "node_modules/"

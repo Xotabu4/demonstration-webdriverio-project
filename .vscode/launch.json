@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Start WDIO",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/wdio",
+            "args": [
+                "./wdio.conf.js",
+            ],
+            // "env": {
+            //     "TS_NODE_CACHE_DIRECTORY": "${workspaceRoot}/.ts-node"
+            // },
+            // "outFiles": [
+            //     "${workspaceRoot}/.ts-node/**"
+            // ],
+            //"sourceMaps": true,
+            //"protocol": "legacy",
+            "console": "internalConsole",
+            "outputCapture": "std",
+            "address": "localhost",
+            "port": 5859,
+        }
+    ]
+}

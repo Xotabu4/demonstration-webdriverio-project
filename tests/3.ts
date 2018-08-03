@@ -31,10 +31,10 @@ describe('Actions -> ', function () {
         const input = $('input#email')
         input.setValue('TEST')
         console.log(input.getValue())
-        // OR the same as getValue()
+        // This is the same as getValue()
         console.log(input.getAttribute('value'))
-        input.addValue(' HELLO')
         // addValue() just appends value, no clearing
+        input.addValue(' HELLO')
         console.log(input.getValue())
         // clearValue clears everything in input
         input.clearElement()
@@ -64,8 +64,11 @@ describe('Actions -> ', function () {
         link.click()
         console.log(browser.session())
         browser.pause(1000000)
-    }) 
-    it.only('working with cookies', function () {
+    })
+    
+    
+    // Day 2
+    it('working with cookies', function () {
         browser.url('https://httpbin.org/cookies/set?hello=world')
         console.log(browser.getCookie('hello'))
         browser.setCookie({ name: 'newCookie', value: 'newValue' })
