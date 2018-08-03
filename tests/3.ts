@@ -65,9 +65,9 @@ describe('Actions -> ', function () {
         console.log(browser.session())
         browser.pause(1000000)
     })
-    
-    
-    // Day 2
+
+
+    // EXTRA
     it('working with cookies', function () {
         browser.url('https://httpbin.org/cookies/set?hello=world')
         console.log(browser.getCookie('hello'))

@@ -48,6 +48,13 @@ describe('Async tests support', function () {
             setImmediate(resolve)
         })
     })
+    it('Test that calls done callback - considered async', function (done) {
+        setTimeout(() => {
+            console.log('This test will finish in 3 seconds!')
+            done()
+        }, 3000)
+    })
+    it('Test without callback or promise will end when all instructions are done')
 })
 
 describe('Test durations', function () {

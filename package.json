@@ -4,8 +4,7 @@
     "description": "Demostration project using WebdriverIO with TypeScript",
     "scripts": {
         "test": "wdio wdio.conf.js",
-        "mocha": "mocha -r ts-node/register ./tests/4_1.ts ",
-        "posttest": "marge ./wdiomochawesome.json --reportTitle 'Awesome test results'"
+        "_posttest": "marge ./wdiomochawesome.json --reportTitle 'Awesome test results'"
     },
     "keywords": [
         "Selenium",

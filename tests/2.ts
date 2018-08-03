@@ -31,4 +31,17 @@ describe('Selectors', function () {
         console.log('1 checkbox is checked: ', checkboxes[0].isSelected())
         console.log('2 checkbox is checked: ', checkboxes[1].isSelected())
     })
+    it('own search strategy', function () {
+        const a = browser.execute("return document.querySelector('body')")
+        console.log('Our element has text - ', a.getText())
+    })
+    it('searching multiple elements', function () {
+        // This returns native array of elements.
+        // All shown search locators might be used here.
+        let checkboxes = $$('input')
+        // Use native array functions to work with elements
+        checkboxes.forEach((elem, index) => {
+            console.log(index, elem.getValue())
+        })
+    })
 })

@@ -1,12 +1,8 @@
-
 import { NotesPage } from './pageObjects/notesPage'
-import { AbstractNote } from './pageObjects/fragments/note/abstractNote'
-import { NoteFragment } from './pageObjects/fragments/note/noteFragment'
 import { expect } from 'chai';
 
-
 describe('Page Objects / Page Fragments', function () {
-    let notesPage = new NotesPage()
+    const notesPage = new NotesPage()
 
     beforeEach(function () {
         browser.timeouts('implicit', 500)
@@ -55,5 +51,4 @@ describe('Page Objects / Page Fragments', function () {
         expect(deletedNoteTitle).to.equal(noteData.titleText, `Title should be ${noteData.titleText}, but was ${deletedNoteTitle}`)
         expect(deletedNoteBody).to.equal(noteData.bodyText, `Body should be ${noteData.bodyText}, but was ${deletedNoteBody}`)
     })
-
 })

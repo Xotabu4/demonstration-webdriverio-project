@@ -12,9 +12,9 @@
             "args": [
                 "./wdio.conf.js",
             ],
-            // "env": {
-            //     "TS_NODE_CACHE_DIRECTORY": "${workspaceRoot}/.ts-node"
-            // },
+            "env": {
+                "DEBUG": "true"
+            },
             // "outFiles": [
             //     "${workspaceRoot}/.ts-node/**"
             // ],
