@@ -13,7 +13,7 @@
                 "./wdio.conf.js",
             ],
             "env": {
-                "DEBUG": "true"
+                "DEBUG": "1"
             },
             // "outFiles": [
             //     "${workspaceRoot}/.ts-node/**"

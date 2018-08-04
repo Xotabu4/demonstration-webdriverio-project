@@ -14,7 +14,7 @@ describe('Waits', function () {
             // Define your predicate function, it must return boolean, or Promise<boolean>
             // Predicate can do whatever you want to do, calls to DB, executing scripts...
             return $('div').isVisible() && $('body').isVisible()
-        }, 10000, 'Message to throw in case waiting was timeout')
+        }, 10000, 'Message to throw in case waiting was timeout', )
     })
     it('elements also has wait functions', function () {
         $('div').waitForVisible(10000)

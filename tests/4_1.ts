@@ -2,7 +2,7 @@ import { resolve } from "url";
 
 afterEach(function () {
     console.log(`
-     To declare global after condition, just define it outside ALL describe blocks.
+     To declare global condition, just define it outside ALL describe blocks.
      Condition will be appended to EVERY "it" in project!
      `)
 })
@@ -49,15 +49,16 @@ describe('Async tests support', function () {
         })
     })
     it('Test that calls done callback - considered async', function (done) {
+        console.log('Test started!')
         setTimeout(() => {
             console.log('This test will finish in 3 seconds!')
-            done()
+            // done()
         }, 3000)
     })
     it('Test without callback or promise will end when all instructions are done')
 })
 
-describe('Test durations', function () {
+describe.only('Test durations', function () {
     this.timeout(500);
     it.only('should highlight in red slow tests', async function () {
         // will warn in test run summary, if reporter supports this
@@ -66,8 +67,8 @@ describe('Test durations', function () {
             setTimeout(() => { resolve() }, 100)
         })
     })
-    it.only('should highlight in yellow slow tests', async function () {
-        // will warn in test run summary, if reporter supports this
+    it('should highlight in yellow slow tests', async function () {
+        // will warn in t`est run summary, if reporter supports this
         this.slow(120)
         await new Promise((resolve, reject) => {
             setTimeout(() => { resolve() }, 100)

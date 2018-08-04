@@ -56,16 +56,12 @@ describe('Actions -> ', function () {
         console.log($('h3').getText())
     })
     it('download file', function () {
-        this.timeout(30000000);
         browser.url('/download')
-
         const link = $('.example a')
         const filename = $('.example a').getText()
         link.click()
         console.log(browser.session())
-        browser.pause(1000000)
     })
-
 
     // EXTRA
     it('working with cookies', function () {

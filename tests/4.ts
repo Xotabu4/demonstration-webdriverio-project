@@ -1,3 +1,5 @@
+import { expect } from 'chai';
+
 // MochaJS
 // https://mochajs.org/
 
@@ -16,6 +18,11 @@ let counter = new Counter()
 
 
 console.log(`${counter} - file parsing`)
+
+beforeEach(() => {
+    console.log(`${counter} - beforeEach execution`)
+})
+
 describe(`parent DESCRIBE block`, () => {
     console.log(`${counter} - file parsing - reading content of describe block`)
 
@@ -56,12 +63,23 @@ describe(`parent DESCRIBE block`, () => {
     })
 
     // DATAPROVIDER
-    let dataCollection = [1, 2, 3, 4, 5]
-    dataCollection.map(data => {
-        it(`DATAPROVIDER: ${counter} TEST for ${data}`, () => {
-            console.log(`TEST number ${data} executed!`)
+    // let dataCollection = [1, 2, 3, 4, 5]
+    // dataCollection.map(data => {
+    //     it(`DATAPROVIDER: ${counter} TEST for ${data}`, () => {
+    //         console.log(`TEST number ${data} executed!`)
+    //     })
+    // })
+
+    let testData = [
+        { a: 2, b: 2, expected: 4 },
+        { a: 3, b: 3, expected: 6 },
+        { a: 10, b: 10, expected: 20 },
+        { a: 100, b: 100, expected: 201 },
+    ]
+    testData.forEach(data => {
+        it(`Testing ${data.a} + ${data.b}`, () => {
+            expect(data.a + data.b).to.equal(data.expected)
         })
     })
-
 })
 console.log(`${counter} - file parsing finished`)

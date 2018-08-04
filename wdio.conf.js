@@ -7,8 +7,8 @@ module.exports.config = {
     port: 4444,
     path: '/wd/hub',
     specs: [
-        //'tests/**/4_1.ts',
-        'tests/**/2.ts',
+        'tests/**/4_1.ts',
+        //'tests/**/2.ts',
         //'tests/**/5.ts'
     ],
     capabilities: [
@@ -43,6 +43,7 @@ module.exports.config = {
         // compilers: [
         //     'ts-node/register'
         // ],
+        require: ''
         timeout: process.env.DEBUG == true ? 12000000 : 60000
     },
     onPrepare: () => {
@@ -50,7 +51,7 @@ module.exports.config = {
         global.expect = chai.expect;
         global.assert = chai.assert;
         global.should = chai.should();
-        if (process.env.DEBUG == true) {
+        if (process.env.DEBUG == '1') {
             // VScode debugger attaches really slowly. This gives some additional time.
             return new Promise(resolve => setTimeout(resolve, 7000))
         }
