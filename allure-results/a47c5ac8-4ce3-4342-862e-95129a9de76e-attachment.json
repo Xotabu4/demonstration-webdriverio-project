@@ -1,7 +1,0 @@
-{
-    "script": "return (function (k, v) {\n                return window.localStorage.setItem(k, v);\n            }).apply(null, arguments)",
-    "args": [
-        "hello",
-        "world"
-    ]
-}

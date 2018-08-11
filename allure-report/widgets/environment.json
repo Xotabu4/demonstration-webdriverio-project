@@ -1,7 +1,0 @@
-[ {
-  "values" : [ "{\"browserName\":\"chrome\",\"enableVNC\":true}" ],
-  "name" : "capabilities"
-}, {
-  "values" : [ "[\"/Users/oleksandrkhotemskyi/demonstration_webdriverio_project/tests/1/5/example/5.ts\"]" ],
-  "name" : "spec files"
-} ]

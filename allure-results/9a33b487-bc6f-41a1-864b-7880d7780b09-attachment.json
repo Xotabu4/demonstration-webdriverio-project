@@ -1,4 +1,0 @@
-{
-    "script": "return (function () {\n                return JSON.stringify(window.localStorage);\n            }).apply(null, arguments)",
-    "args": []
-}

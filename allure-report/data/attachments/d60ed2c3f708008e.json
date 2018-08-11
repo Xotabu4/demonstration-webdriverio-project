@@ -1,4 +1,0 @@
-{
-    "using": "css selector",
-    "value": "li.dropdown.open ul.dropdown-menu"
-}

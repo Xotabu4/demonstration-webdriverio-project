@@ -7,7 +7,7 @@ module.exports.config = {
     port: 4444,
     path: '/wd/hub',
     specs: [
-        'tests/2/2.ts',
+        'tests/2/1.ts',
         //'tests/1/3.ts',
         //'tests/1/5/example/5.ts',
     ],
@@ -20,7 +20,7 @@ module.exports.config = {
     baseUrl: 'http://the-internet.herokuapp.com',
     sync: true,
     // Level of logging verbosity: silent | verbose | command | data | result | error
-    logLevel: 'command',
+    logLevel: 'verbose',
     coloredLogs: true,
     // baseUrl: 'https://google.com',
     // Default timeout for all waitFor* commands.

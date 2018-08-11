@@ -21,7 +21,13 @@ describe('Working with file system (no-wdio)', function () {
         // Notice - readFile returns Buffer object
         let content = await fs.readFile('./.temp/newtest.txt');
         console.log('Got content from file:', content.toString())
+
+        // Same as 
+        // fs.readFile('./.temp/newtest.txt').then(content => {
+        //     console.log('Got content from file:', content.toString())
+        // })
     })
+
     it('Delete folder/file', async function () {
         await fs.remove('./.temp/')
     })
@@ -58,8 +64,8 @@ describe('Working with HTTP requests', function () {
         console.log('GET response: ', resp)
     })
 
-    it('Using response to type into fields on website (wdio)', async function () {
-        let creds = await request.get('https://my-json-server.typicode.com/xotabu4/dummy_api/user', { json: true })
+    it('Using response to type into fields on website (wdio)', function () {
+        let creds = browser.call(() => request.get('https://my-json-server.typicode.com/xotabu4/dummy_api/user', { json: true }))
         console.log('Received response: ', creds)
         browser.url('/login')
         $('#username').setValue(creds[0].username)
