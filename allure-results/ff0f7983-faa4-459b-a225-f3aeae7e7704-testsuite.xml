@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1533835125854' stop='1533835127487'>
+    <name>tricky internal objects</name>
+    <title>tricky internal objects</title>
+    <test-cases>
+        <test-case start='1533835125855' status='passed' stop='1533835127485'>
+            <name>what find element returns</name>
+            <title>what find element returns</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","enableVNC":true}'/>
+                <parameter kind='environment-variable' name='spec files' value='["/Users/oleksandrkhotemskyi/demonstration_webdriverio_project/tests/2/2.ts"]'/>
+            </parameters>
+            <steps>
+                <step start='1533835125859' status='passed' stop='1533835127373'>
+                    <name>POST /wd/hub/session/6b84f1518e48cf9e97517aafad7b08d5/url</name>
+                    <title>POST /wd/hub/session/6b84f1518e48cf9e97517aafad7b08d5/url</title>
+                    <attachments>
+                        <attachment title='Request' source='85090fdd-e027-4f7d-a300-e80cada6ba35-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='9e37c45e-8efe-4952-b76a-cdd28827c7d1-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1533835127378' status='passed' stop='1533835127481'>
+                    <name>POST /wd/hub/session/6b84f1518e48cf9e97517aafad7b08d5/element</name>
+                    <title>POST /wd/hub/session/6b84f1518e48cf9e97517aafad7b08d5/element</title>
+                    <attachments>
+                        <attachment title='Request' source='38dc856d-f3ea-4fba-a8dc-a3a788fda5fb-attachment.json' type='application/json' size='51'/>
+                        <attachment title='Response' source='5bd41f7a-a3eb-4e7c-9cc4-36c13a7dcb9e-attachment.json' type='application/json' size='137'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

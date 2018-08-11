@@ -7,9 +7,9 @@ module.exports.config = {
     port: 4444,
     path: '/wd/hub',
     specs: [
-        'tests/**/4_1.ts',
-        //'tests/**/2.ts',
-        //'tests/**/5.ts'
+        'tests/2/2.ts',
+        //'tests/1/3.ts',
+        //'tests/1/5/example/5.ts',
     ],
     capabilities: [
         {
@@ -20,7 +20,7 @@ module.exports.config = {
     baseUrl: 'http://the-internet.herokuapp.com',
     sync: true,
     // Level of logging verbosity: silent | verbose | command | data | result | error
-    // logLevel: 'silent',
+    logLevel: 'command',
     coloredLogs: true,
     // baseUrl: 'https://google.com',
     // Default timeout for all waitFor* commands.
@@ -31,19 +31,22 @@ module.exports.config = {
     connectionRetryCount: 3,
     reporters: [
         'spec',
-        //     'mochawesome'
+        'mochawesome',
+        'allure'
     ],
     reporterOptions: {
-        outputDir: './', //json file will be written to this directory
-        // mochawesome_filename: 'myfile.json' //will default to wdiomochawesome.json if no name is provided
+        mochawesome: {
+            outputDir: './mochaawesome', //mochajs json file will be written to this directory
+            //mochawesome_filename: 'myfile.json' //will default to wdiomochawesome.json if no name is provided
+        },
+        // http://webdriver.io/guide/reporters/allure.html
+        allure: {
+            outputDir: './allure-results'
+        }
     },
     framework: 'mocha',
     mochaOpts: {
         // https://mochajs.org/#usage
-        // compilers: [
-        //     'ts-node/register'
-        // ],
-        require: ''
         timeout: process.env.DEBUG == true ? 12000000 : 60000
     },
     onPrepare: () => {

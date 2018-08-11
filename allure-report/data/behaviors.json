@@ -1,0 +1,41 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "can create note",
+    "uid" : "2979962f1f686252",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1533764135114,
+      "stop" : 1533764140546,
+      "duration" : 5432
+    },
+    "flaky" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "can archive note",
+    "uid" : "7398e448dfac6c9e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1533764143019,
+      "stop" : 1533764149969,
+      "duration" : 6950
+    },
+    "flaky" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "can delete note",
+    "uid" : "ef57acac1f1808f1",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1533764152322,
+      "stop" : 1533764159662,
+      "duration" : 7340
+    },
+    "flaky" : false,
+    "parameters" : [ "chrome" ]
+  } ]
+}

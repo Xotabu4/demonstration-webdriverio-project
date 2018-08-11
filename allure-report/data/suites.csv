@@ -1,0 +1,4 @@
+"Status","Name","Duration in ms","Description"
+"passed","Page Objects / Page Fragments.can delete note","7340",""
+"passed","Page Objects / Page Fragments.can archive note","6950",""
+"passed","Page Objects / Page Fragments.can create note","5432",""

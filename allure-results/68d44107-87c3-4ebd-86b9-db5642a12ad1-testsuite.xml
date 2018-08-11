@@ -1,0 +1,171 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1533845379904' stop='1533845382940'>
+    <name>custom commands</name>
+    <title>custom commands</title>
+    <test-cases>
+        <test-case start='1533845379905' status='passed' stop='1533845380836'>
+            <name>working with cookies</name>
+            <title>working with cookies</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","enableVNC":true}'/>
+                <parameter kind='environment-variable' name='spec files' value='["/Users/oleksandrkhotemskyi/demonstration_webdriverio_project/tests/2/2.ts"]'/>
+            </parameters>
+            <steps>
+                <step start='1533845379909' status='passed' stop='1533845380542'>
+                    <name>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/url</name>
+                    <title>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/url</title>
+                    <attachments>
+                        <attachment title='Request' source='07c24d59-5d5e-4726-9c0b-4339a829e2d2-attachment.json' type='application/json' size='60'/>
+                        <attachment title='Response' source='0d3671cd-2bb0-45f6-8daf-b1df902d0486-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1533845380549' status='passed' stop='1533845380566'>
+                    <name>GET /wd/hub/session/1344917335c08351365161ea1a9ddb1f/cookie</name>
+                    <title>GET /wd/hub/session/1344917335c08351365161ea1a9ddb1f/cookie</title>
+                    <attachments>
+                        <attachment title='Response' source='29ef6226-47e7-4e59-bd38-a5299708b5c1-attachment.json' type='application/json' size='293'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1533845380570' status='passed' stop='1533845380580'>
+                    <name>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/cookie</name>
+                    <title>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/cookie</title>
+                    <attachments>
+                        <attachment title='Request' source='0c47bd12-0695-4163-a895-53d7e1d23685-attachment.json' type='application/json' size='82'/>
+                        <attachment title='Response' source='689d23d4-5dbc-420d-afb8-fbcd3739cc93-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1533845380582' status='passed' stop='1533845380753'>
+                    <name>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/url</name>
+                    <title>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/url</title>
+                    <attachments>
+                        <attachment title='Request' source='2f9d864f-1a19-40de-a356-20e2a723d387-attachment.json' type='application/json' size='44'/>
+                        <attachment title='Response' source='603d19e6-f922-4fe5-8028-18b16ae5e28a-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1533845380756' status='passed' stop='1533845380791'>
+                    <name>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/element</name>
+                    <title>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/element</title>
+                    <attachments>
+                        <attachment title='Request' source='6920bfe0-1273-4c8d-a64b-613fc687811b-attachment.json' type='application/json' size='52'/>
+                        <attachment title='Response' source='448144ce-77c9-418b-bdd0-9e5c030d35c4-attachment.json' type='application/json' size='136'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1533845380796' status='passed' stop='1533845380834'>
+                    <name>GET /wd/hub/session/1344917335c08351365161ea1a9ddb1f/element/0.9624852751303223-1/text</name>
+                    <title>GET /wd/hub/session/1344917335c08351365161ea1a9ddb1f/element/0.9624852751303223-1/text</title>
+                    <attachments>
+                        <attachment title='Response' source='502cd43f-f6a2-4b24-86af-27f5f6d6d8be-attachment.json' type='application/json' size='177'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1533845380837' status='passed' stop='1533845382804'>
+            <name>working with storage objects</name>
+            <title>working with storage objects</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","enableVNC":true}'/>
+                <parameter kind='environment-variable' name='spec files' value='["/Users/oleksandrkhotemskyi/demonstration_webdriverio_project/tests/2/2.ts"]'/>
+            </parameters>
+            <steps>
+                <step start='1533845380839' status='passed' stop='1533845382255'>
+                    <name>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/url</name>
+                    <title>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a4dc85ec-a292-4799-9a09-d5a7b55c2b8d-attachment.json' type='application/json' size='59'/>
+                        <attachment title='Response' source='e4978383-7c20-4d10-ad80-a66c7546338f-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1533845382771' status='passed' stop='1533845382792'>
+                    <name>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/execute</name>
+                    <title>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/execute</title>
+                    <attachments>
+                        <attachment title='Request' source='5a18f760-9dd0-4aac-b711-caceb89cb241-attachment.json' type='application/json' size='197'/>
+                        <attachment title='Response' source='119e0744-0f7e-4d75-af72-f3ffd6a80716-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1533845382793' status='passed' stop='1533845382804'>
+                    <name>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/execute</name>
+                    <title>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/execute</title>
+                    <attachments>
+                        <attachment title='Request' source='1d5c5899-fc07-433b-a057-43f487d4e768-attachment.json' type='application/json' size='157'/>
+                        <attachment title='Response' source='9197f095-66fb-4891-83ce-35770ed1a759-attachment.json' type='application/json' size='110'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1533845382805' status='passed' stop='1533845382939'>
+            <name>cleaning by using custom command</name>
+            <title>cleaning by using custom command</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","enableVNC":true}'/>
+                <parameter kind='environment-variable' name='spec files' value='["/Users/oleksandrkhotemskyi/demonstration_webdriverio_project/tests/2/2.ts"]'/>
+            </parameters>
+            <steps>
+                <step start='1533845382806' status='passed' stop='1533845382902'>
+                    <name>DELETE /wd/hub/session/1344917335c08351365161ea1a9ddb1f/cookie</name>
+                    <title>DELETE /wd/hub/session/1344917335c08351365161ea1a9ddb1f/cookie</title>
+                    <attachments>
+                        <attachment title='Response' source='4a604e61-fd69-4e69-9abb-2e1a7d045c24-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1533845382904' status='passed' stop='1533845382915'>
+                    <name>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/execute</name>
+                    <title>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/execute</title>
+                    <attachments>
+                        <attachment title='Request' source='d8d2d042-96d4-4980-969f-f3a51f1b93e4-attachment.json' type='application/json' size='190'/>
+                        <attachment title='Response' source='438d24ac-1367-4db2-94df-09017ef3f9ba-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1533845382916' status='passed' stop='1533845382927'>
+                    <name>GET /wd/hub/session/1344917335c08351365161ea1a9ddb1f/cookie</name>
+                    <title>GET /wd/hub/session/1344917335c08351365161ea1a9ddb1f/cookie</title>
+                    <attachments>
+                        <attachment title='Response' source='37a1ba32-61a8-4a75-b9d7-b77d6f6521c2-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1533845382929' status='passed' stop='1533845382939'>
+                    <name>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/execute</name>
+                    <title>POST /wd/hub/session/1344917335c08351365161ea1a9ddb1f/execute</title>
+                    <attachments>
+                        <attachment title='Request' source='9a33b487-bc6f-41a1-864b-7880d7780b09-attachment.json' type='application/json' size='157'/>
+                        <attachment title='Response' source='06102904-bc1a-4bf6-beee-846af137d743-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

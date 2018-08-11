@@ -1,0 +1,31 @@
+[ {
+  "uid" : "2979962f1f686252",
+  "name" : "can create note",
+  "time" : {
+    "start" : 1533764135114,
+    "stop" : 1533764140546,
+    "duration" : 5432
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7398e448dfac6c9e",
+  "name" : "can archive note",
+  "time" : {
+    "start" : 1533764143019,
+    "stop" : 1533764149969,
+    "duration" : 6950
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef57acac1f1808f1",
+  "name" : "can delete note",
+  "time" : {
+    "start" : 1533764152322,
+    "stop" : 1533764159662,
+    "duration" : 7340
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

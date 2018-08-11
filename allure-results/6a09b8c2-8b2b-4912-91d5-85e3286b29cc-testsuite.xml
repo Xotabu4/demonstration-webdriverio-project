@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1533821867009' stop='1533821867841'>
+    <name>Working with HTTP requests</name>
+    <title>Working with HTTP requests</title>
+    <test-cases>
+        <test-case start='1533821867009' status='failed' stop='1533821867834'>
+            <name>Making POST, receiving response, and typing it into field on website</name>
+            <title>Making POST, receiving response, and typing it into field on website</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","enableVNC":true}'/>
+                <parameter kind='environment-variable' name='spec files' value='["/Users/oleksandrkhotemskyi/demonstration_webdriverio_project/tests/2/1.ts"]'/>
+            </parameters>
+            <steps>
+                <step start='1533821867834' status='undefined'>
+                    <name>POST /wd/hub/session/fbfbc4471c8700be230ae1e398351316/url</name>
+                    <title>POST /wd/hub/session/fbfbc4471c8700be230ae1e398351316/url</title>
+                    <attachments>
+                        <attachment title='Request' source='d9669357-8a99-4755-8471-8c768281f8cc-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps>
+                        <step start='1533821867837' status='undefined'>
+                            <name>POST /wd/hub/session/fbfbc4471c8700be230ae1e398351316/element</name>
+                            <title>POST /wd/hub/session/fbfbc4471c8700be230ae1e398351316/element</title>
+                            <attachments>
+                                <attachment title='Request' source='2848f81f-e506-4a98-ac9c-6a57fe0bc8d7-attachment.json' type='application/json' size='46'/>
+                            </attachments>
+                            <steps>
+                                <step start='1533821867838' status='undefined'>
+                                    <name>POST /wd/hub/session/fbfbc4471c8700be230ae1e398351316/element</name>
+                                    <title>POST /wd/hub/session/fbfbc4471c8700be230ae1e398351316/element</title>
+                                    <attachments>
+                                        <attachment title='Request' source='db90a367-3159-44aa-8a3d-2531125376e2-attachment.json' type='application/json' size='46'/>
+                                    </attachments>
+                                    <steps>
+                                        <step start='1533821867838' status='undefined'>
+                                            <name>POST /wd/hub/session/fbfbc4471c8700be230ae1e398351316/element</name>
+                                            <title>POST /wd/hub/session/fbfbc4471c8700be230ae1e398351316/element</title>
+                                            <attachments>
+                                                <attachment title='Request' source='93636cbc-ba9f-446a-8f22-7d2bb33641dd-attachment.json' type='application/json' size='54'/>
+                                            </attachments>
+                                            <steps>
+                                                <step start='1533821867838' status='undefined'>
+                                                    <name>POST /wd/hub/session/fbfbc4471c8700be230ae1e398351316/element</name>
+                                                    <title>POST /wd/hub/session/fbfbc4471c8700be230ae1e398351316/element</title>
+                                                    <attachments>
+                                                        <attachment title='Request' source='20489a61-143b-48b6-b8ab-9c508e99ea19-attachment.json' type='application/json' size='62'/>
+                                                    </attachments>
+                                                    <steps/>
+                                                </step>
+                                            </steps>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expected { state: 'pending' } to be true</message>
+                <stack-trace>AssertionError: expected { state: 'pending' } to be true
+                    at Context.&lt;anonymous> (/Users/oleksandrkhotemskyi/demonstration_webdriverio_project/tests/2/1.ts:102:54)
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (/Users/oleksandrkhotemskyi/demonstration_webdriverio_project/tests/2/1.ts:4:58)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

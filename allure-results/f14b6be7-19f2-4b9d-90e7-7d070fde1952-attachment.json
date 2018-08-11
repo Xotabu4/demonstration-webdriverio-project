@@ -1,0 +1,33 @@
+{
+    "sessionId": "9ec03f8689e7f67c81b798c6d128cc88",
+    "status": 0,
+    "value": {
+        "acceptInsecureCerts": false,
+        "acceptSslCerts": false,
+        "applicationCacheEnabled": false,
+        "browserConnectionEnabled": false,
+        "browserName": "chrome",
+        "chrome": {
+            "chromedriverVersion": "2.39.562737 (dba483cee6a5f15e2e2d73df16968ab10b38a2bf)",
+            "userDataDir": "/tmp/.org.chromium.Chromium.2xFkBW"
+        },
+        "cssSelectorsEnabled": true,
+        "databaseEnabled": false,
+        "handlesAlerts": true,
+        "hasTouchScreen": false,
+        "javascriptEnabled": true,
+        "locationContextEnabled": true,
+        "mobileEmulationEnabled": false,
+        "nativeEvents": true,
+        "networkConnectionEnabled": false,
+        "pageLoadStrategy": "normal",
+        "platform": "Linux",
+        "rotatable": false,
+        "setWindowRect": true,
+        "takesHeapSnapshot": true,
+        "takesScreenshot": true,
+        "unexpectedAlertBehaviour": "",
+        "version": "67.0.3396.62",
+        "webStorageEnabled": true
+    }
+}
