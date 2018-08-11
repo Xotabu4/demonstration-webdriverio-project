@@ -7,9 +7,9 @@ module.exports.config = {
     port: 4444,
     path: '/wd/hub',
     specs: [
-        'tests/2/1.ts',
+        //'tests/2/2.ts',
         //'tests/1/3.ts',
-        //'tests/1/5/example/5.ts',
+        'tests/1/5/example/5.ts',
     ],
     capabilities: [
         {
@@ -29,6 +29,8 @@ module.exports.config = {
     // if Selenium Grid doesn't send response
     connectionRetryTimeout: 30000,
     connectionRetryCount: 3,
+    // Saves a screenshot to a given path if a command fails.
+    screenshotPath: './shots/',
     reporters: [
         'spec',
         'mochawesome',

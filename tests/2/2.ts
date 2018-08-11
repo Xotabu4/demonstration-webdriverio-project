@@ -2,7 +2,6 @@
 
 // silencing typescript
 var browser: any = global['browser']
-
 describe('returning objects structure', function () {
     it('what find element returns', function () {
         if (process.env.DEBUG) browser.pause(8000) // waiting for debugger
@@ -11,13 +10,12 @@ describe('returning objects structure', function () {
         console.dir(elem)
         const loc = elem.getLocation()
         console.dir(loc)
-
+        let txt = browser.elementIdText(elem.value.ELEMENT)
         /**
         Is inherits from:
         { 
             sessionId: '490ddd6b7ab2a1dc5adaa9aff71cc56a',
-            value: 
-            { 
+            value: { 
                 // element id:
                 ELEMENT: '0.8348316699095244-1',
                 'element-6066-11e4-a52e-4f735466cecf': '0.8348316699095244-1' 

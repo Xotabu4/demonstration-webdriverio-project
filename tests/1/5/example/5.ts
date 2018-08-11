@@ -14,13 +14,14 @@ describe('Page Objects / Page Fragments', function () {
         browser.reload()
     })
 
-    it('can create note', function () {
+    it.only('can create note', function () {
         const noteData = { titleText: 'HELLO', bodyText: 'WORLD' }
         notesPage.noteEditor.createNote(noteData)
         notesPage.getNote(0).waitForVisiblity()
         expect(notesPage.notes.length).to.equal(1, 'Should be created only one note')
         const createdNoteTitle = notesPage.getNote(0).getTitle()
         const createdNoteBody = notesPage.getNote(0).getBody()
+        throw new Error('test failure')
         expect(createdNoteTitle).to.equal(noteData.titleText, `Title should be ${noteData.titleText}, but was ${createdNoteTitle}`)
         expect(createdNoteBody).to.equal(noteData.bodyText, `Body should be ${noteData.bodyText}, but was ${createdNoteBody}`)
     })

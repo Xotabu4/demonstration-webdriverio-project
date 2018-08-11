@@ -4,7 +4,7 @@
     "description": "Demostration project using WebdriverIO with TypeScript",
     "scripts": {
         "test": "wdio wdio.conf.js",
-        "___posttest": "marge ./mochaawesome/wdiomochawesome.json --reportTitle 'Awesome test results'",
+        "posttest": "marge ./mochaawesome/wdiomochawesome.json --reportTitle 'Awesome test results' && allure generate ./allure-results",
         "_posttest": "allure generate ./allure-results",
         "allure": "allure open"
     },
