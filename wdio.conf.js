@@ -1,3 +1,5 @@
+// This makes ts-node to load tsconfig.json and index.d.ts. Dunno why it doesn't do this by default
+process.env.TS_NODE_FILES = true
 require('ts-node').register()
 module.exports.config = {
     // Always running with debugger enabled
