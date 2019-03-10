@@ -2,7 +2,7 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es2017",
-        //"outDir": "./built"
+        "outDir": "./built",
         "sourceMap": true,
         "inlineSourceMap": true,
         "inlineSources": true
